@@ -7,14 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
     "webpack-from-cli": "webpack src/index.js --output dist/bundle.js",
-    "webpack-from-config": "webpack --config webpack.config.js"
+    "webpack-from-config": "webpack --config webpack.config.js",
+    "generate-example": "webpack --config webpack.example.js",
+    "start-example": "webpack-dev-server --config webpack.example.js --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.5"
